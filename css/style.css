@@ -17,3 +17,74 @@
 /* Colores */
 
 /* ******************************** */
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+}
+
+body {
+    
+    height: 100vh;
+    background-image: url(../svg/images\ 1.svg);
+    background-position: center center;
+    background-size: cover; /* Esto ajusta el tamaño de la imagen para cubrir todo el cuerpo */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, auto) 1fr;
+  grid-template-rows: 20px;
+  
+  row-gap: 40px;
+  column-gap: 150px;
+  grid-template-areas: 
+  ".    .       .       .    ."
+  ".    . tituloPagina .     ."
+  ".    .      .         .   ."
+  "mono   .     .       .   dragon"
+  "mono  .  compatible   .   ."
+  "mono      .   .       .   rata"
+  ".      .    .      .       ."
+  ".   textfooter  textfooter  textfooter    ."
+  ;
+}
+
+.titulo {
+  grid-area: tituloPagina;
+  font-size: 30px;
+  color: red;
+}
+
+.dragon {
+  grid-area: dragon;
+  width: 120px;
+  color: red;
+}
+
+.mono {
+  grid-area: mono;
+  width: 320px;
+  color: red;
+}
+
+.compatible {
+  color: red;
+  grid-area: compatible;
+  font-size: 25px;
+}
+
+.rata{
+  grid-area: rata;
+  width: 80px;
+  color: red;
+}
+
+.textFo{
+  grid-area: textfooter;
+  
+}
+
